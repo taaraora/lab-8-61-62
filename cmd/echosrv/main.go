@@ -45,7 +45,7 @@ func handleClient(conn net.Conn) {
 
 		_, err = conn.Write(msg[:n])
 		if err != nil {
-			fmt.Println("Error:", err)
+			fmt.Println("cannot write message back to the client:", err)
 			return
 		}
 	}

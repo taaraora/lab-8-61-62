@@ -42,7 +42,7 @@ func main() {
 	}
 
 	addr := args[0] + ":" + args[1]
-	conn, err := net.Dial("tcp4", addr)
+	conn, err := net.Dial("tcp", addr)
 	if err != nil {
 		log.Fatal(err)
 	}
